@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+/*--------------------*/
+body {
+  background-color: #2A2A2A;
+  font-family: 'Montserrat', serif; }
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 1775px) {
+    .container {
+      max-width: 1124px; } }
+  @media only screen and (max-width: 1190px) {
+    .container {
+      max-width: 900px; } }
+  @media only screen and (max-width: 1000px) {
+    .container {
+      max-width: 650px; } }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 2.7em 5.5em; }
+  @media only screen and (max-width: 1775px) {
+    .wrapper {
+      padding: 2.1em 8.5em; } }
+  @media only screen and (max-width: 1330px) {
+    .wrapper {
+      padding: 1.5em 4.5em; } }
+  @media only screen and (max-width: 1190px) {
+    .wrapper {
+      padding: 35px 60px; } }
+  @media only screen and (max-width: 1000px) {
+    .wrapper {
+      padding: 30px 60px; } }
+  @media only screen and (max-width: 730px) {
+    .wrapper {
+      padding: 30px 20px; } }
+
+header .headerBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  header .headerBody a {
+    color: #fff; }
+  header .headerBody .logo {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold; }
+    @media only screen and (max-width: 1775px) {
+      header .headerBody .logo {
+        font-size: 25px; } }
+  header .headerBody .nav .burger {
+    display: none;
+    cursor: pointer; }
+    @media only screen and (max-width: 750px) {
+      header .headerBody .nav .burger {
+        display: block; } }
+  header .headerBody .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 999; }
+    header .headerBody .list .close {
+      position: absolute;
+      top: 2%;
+      right: 10%;
+      padding: 1em;
+      cursor: pointer; }
+      @media only screen and (min-width: 750px) {
+        header .headerBody .list .close {
+          display: none; } }
+    @media only screen and (max-width: 750px) {
+      header .headerBody .list {
+        position: fixed;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        padding-top: 4.5em;
+        border: 1px solid #707070;
+        background-color: #fff;
+        display: block;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out; } }
+    header .headerBody .list li {
+      font-size: 28px;
+      font-weight: bold;
+      text-decoration: underline; }
+      @media only screen and (max-width: 1775px) {
+        header .headerBody .list li {
+          font-size: 20px; } }
+      @media only screen and (max-width: 750px) {
+        header .headerBody .list li {
+          font-size: 20px;
+          padding: 2em 0;
+          padding-left: 2em; } }
+      @media only screen and (max-width: 750px) {
+        header .headerBody .list li a {
+          color: #2A2A2A; } }
+    header .headerBody .list li:nth-child(3) {
+      margin: 0 4.4em;
+      z-index: 999; }
+      @media only screen and (max-width: 750px) {
+        header .headerBody .list li:nth-child(3) {
+          margin: 0; } }
+    header .headerBody .list li:nth-child(2) {
+      z-index: 999; }
+  header .headerBody .openMenu {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+
+main {
+  margin-top: 3.7em; }
+  main .mainBody1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media only screen and (max-width: 1775px) {
+      main .mainBody1 {
+        max-height: 360px; } }
+    @media only screen and (max-width: 1190px) {
+      main .mainBody1 {
+        max-height: 260px; } }
+    @media only screen and (max-width: 1000px) {
+      main .mainBody1 {
+        max-height: 190px; } }
+    @media only screen and (max-width: 730px) {
+      main .mainBody1 {
+        max-height: auto;
+        display: block; } }
+  main .block {
+    height: 100%;
+    border: 1px solid #707070;
+    border-radius: 50px; }
+    @media only screen and (max-width: 1775px) {
+      main .block {
+        border-radius: 30px; } }
+    @media only screen and (max-width: 1000px) {
+      main .block {
+        border-radius: 23px; } }
+    @media only screen and (max-width: 1000px) {
+      main .block {
+        border-radius: 20px; } }
+  main .white {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1460px;
+    width: 100%;
+    max-height: 510px; }
+    @media only screen and (max-width: 1775px) {
+      main .white {
+        max-width: 935px;
+        max-height: 360px; } }
+    @media only screen and (max-width: 1190px) {
+      main .white {
+        max-height: 260px;
+        max-width: 750px; } }
+    @media only screen and (max-width: 1000px) {
+      main .white {
+        max-height: 190px;
+        max-width: 540px; } }
+    @media only screen and (max-width: 730px) {
+      main .white {
+        max-height: auto;
+        max-width: 1000px; } }
+    @media only screen and (max-width: 525px) {
+      main .white {
+        display: block;
+        max-height: 430px; } }
+  main .text {
+    font-family: 'Lato', sans-serif;
+    padding: 30px 60px; }
+    @media only screen and (max-width: 1775px) {
+      main .text {
+        padding: 30px;
+        padding-right: 0; } }
+    @media only screen and (max-width: 1000px) {
+      main .text {
+        padding: 25px;
+        padding-right: 0; } }
+    @media only screen and (max-width: 525px) {
+      main .text {
+        padding: 15px;
+        margin: 0 auto;
+        text-align: center; } }
+  main .title {
+    font-size: 98px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: 'lato', serif; }
+    @media only screen and (max-width: 1775px) {
+      main .title {
+        font-size: 56px; } }
+    @media only screen and (max-width: 1190px) {
+      main .title {
+        font-size: 49px; } }
+    @media only screen and (max-width: 1000px) {
+      main .title {
+        font-size: 35px; } }
+    @media only screen and (max-width: 730px) {
+      main .title {
+        font-size: 30px; } }
+    @media only screen and (max-width: 525px) {
+      main .title {
+        margin-bottom: 20px; } }
+  main .subtitle {
+    font-size: 47px; }
+    @media only screen and (max-width: 1775px) {
+      main .subtitle {
+        font-size: 26px; } }
+    @media only screen and (max-width: 1190px) {
+      main .subtitle {
+        font-size: 23px; } }
+    @media only screen and (max-width: 1000px) {
+      main .subtitle {
+        font-size: 15px; } }
+  main .avatar {
+    padding-bottom: 9em; }
+    main .avatar img {
+      max-width: 640px; }
+      @media only screen and (max-width: 1775px) {
+        main .avatar img {
+          max-width: 430px; } }
+      @media only screen and (max-width: 1190px) {
+        main .avatar img {
+          max-width: 330px; } }
+      @media only screen and (max-width: 1000px) {
+        main .avatar img {
+          max-width: 230px; } }
+      @media only screen and (max-width: 525px) {
+        main .avatar img {
+          margin: 0 auto;
+          display: block; } }
+    @media only screen and (max-width: 1775px) {
+      main .avatar {
+        padding-bottom: 5em; } }
+    @media only screen and (max-width: 1000px) {
+      main .avatar {
+        padding-bottom: 3em; } }
+  main .red {
+    background-color: #FE3D01;
+    height: 510px;
+    width: 230px;
+    margin-left: 2em;
+    position: relative; }
+    @media only screen and (max-width: 1775px) {
+      main .red {
+        max-width: 175px;
+        height: 360px; } }
+    @media only screen and (max-width: 1190px) {
+      main .red {
+        max-width: 130px;
+        height: 260px; } }
+    @media only screen and (max-width: 1000px) {
+      main .red {
+        max-width: 95px;
+        height: 190px; } }
+    @media only screen and (max-width: 730px) {
+      main .red {
+        margin-top: 30px;
+        max-width: 650px;
+        width: 100%;
+        height: 100px;
+        display: -ms-grid;
+        display: grid;
+        place-items: center;
+        margin-left: 0; } }
+  main .redText {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 57%;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    rotate: -90deg;
+    text-transform: uppercase;
+    color: #2A2A2A; }
+    @media only screen and (max-width: 1775px) {
+      main .redText {
+        font-size: 45px; } }
+    @media only screen and (max-width: 1190px) {
+      main .redText {
+        font-size: 33px; } }
+    @media only screen and (max-width: 1000px) {
+      main .redText {
+        font-size: 22px; } }
+    @media only screen and (max-width: 730px) {
+      main .redText {
+        position: relative;
+        rotate: 0deg;
+        top: 0;
+        font-size: 45px; } }
+  main .mainBody2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 25px; }
+    @media only screen and (max-width: 730px) {
+      main .mainBody2 {
+        margin-top: 160px;
+        display: block; } }
+    @media only screen and (max-width: 525px) {
+      main .mainBody2 {
+        margin-top: 375px;
+        display: block; } }
+  main .blockLine {
+    max-width: 870px;
+    width: 100%;
+    position: relative; }
+    @media only screen and (max-width: 1775px) {
+      main .blockLine {
+        max-width: 625px; } }
+    @media only screen and (max-width: 1190px) {
+      main .blockLine {
+        max-width: 550px; } }
+    @media only screen and (max-width: 1000px) {
+      main .blockLine {
+        max-width: 370px; } }
+    @media only screen and (max-width: 730px) {
+      main .blockLine {
+        max-width: 650px; } }
+  @media only screen and (max-width: 1775px) {
+    main .lines .non {
+      display: none; } }
+  @media only screen and (max-width: 730px) {
+    main .lines .non {
+      display: block; } }
+  @media only screen and (max-width: 1190px) {
+    main .lines .non2 {
+      display: none; } }
+  main .lines p {
+    width: 100%;
+    height: 13px;
+    background-color: #F0FF6F;
+    border-radius: 50px; }
+  main .lines p:not(:last-child) {
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 1000px) {
+      main .lines p:not(:last-child) {
+        margin-bottom: 10px; } }
+  main .ux {
+    text-transform: uppercase;
+    font-size: 245px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #2A2A2A;
+    text-shadow: #707070 1px 0px 0px, #707070 0.5403px 0.84147px 0px, #707070 -0.41615px 0.9093px 0px, #707070 -0.98999px 0.14112px 0px, #707070 -0.65364px -0.7568px 0px, #707070 0.28366px -0.95892px 0px, #707070 0.96017px -0.27942px 0px; }
+    @media only screen and (max-width: 1775px) {
+      main .ux {
+        font-size: 175px; } }
+    @media only screen and (max-width: 1190px) {
+      main .ux {
+        font-size: 135px; } }
+    @media only screen and (max-width: 1000px) {
+      main .ux {
+        font-size: 85px; } }
+    @media only screen and (max-width: 730px) {
+      main .ux {
+        font-size: 175px; } }
+    @media only screen and (max-width: 590px) {
+      main .ux {
+        font-size: 135px; } }
+    @media only screen and (max-width: 500px) {
+      main .ux {
+        font-size: 105px; } }
+  main .blockPhrase {
+    width: 100%;
+    max-width: 780px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 30px; }
+    @media only screen and (max-width: 1775px) {
+      main .blockPhrase {
+        max-width: 450px;
+        border-radius: 40px; } }
+    @media only screen and (max-width: 1190px) {
+      main .blockPhrase {
+        max-width: 340px;
+        border-radius: 30px; } }
+    @media only screen and (max-width: 1000px) {
+      main .blockPhrase {
+        max-width: 270px;
+        border-radius: 25px; } }
+    @media only screen and (max-width: 730px) {
+      main .blockPhrase {
+        max-width: 650px;
+        margin-left: 0;
+        margin-top: 30px; } }
+    main .blockPhrase .blockPhraseBody {
+      padding: 60px 30px; }
+      @media only screen and (max-width: 1775px) {
+        main .blockPhrase .blockPhraseBody {
+          padding: 30px 15px; } }
+      @media only screen and (max-width: 1000px) {
+        main .blockPhrase .blockPhraseBody {
+          padding: 20px 10px; } }
+  main .blockPhraseUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  main .rectangle {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    border: 1px solid #707070;
+    border-radius: 30px; }
+    main .rectangle p {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.5em 1em; }
+      @media only screen and (max-width: 1775px) {
+        main .rectangle p {
+          font-size: 14px; } }
+      @media only screen and (max-width: 1190px) {
+        main .rectangle p {
+          font-size: 10px;
+          font-weight: 700; } }
+      @media only screen and (max-width: 730px) {
+        main .rectangle p {
+          font-size: 15px;
+          font-weight: 700; } }
+      @media only screen and (max-width: 500px) {
+        main .rectangle p {
+          font-size: 10px;
+          font-weight: 700; } }
+  main .phrase {
+    font-size: 22px;
+    font-weight: 700;
+    max-width: 430px;
+    color: #2A2A2A; }
+    @media only screen and (max-width: 1775px) {
+      main .phrase {
+        font-size: 18px;
+        max-width: 270px; } }
+    @media only screen and (max-width: 1190px) {
+      main .phrase {
+        font-size: 14px;
+        max-width: 200px; } }
+    @media only screen and (max-width: 1190px) {
+      main .phrase {
+        font-size: 10px;
+        max-width: 130px; } }
+    @media only screen and (max-width: 730px) {
+      main .phrase {
+        font-size: 20px;
+        max-width: 400px; } }
+    @media only screen and (max-width: 590px) {
+      main .phrase {
+        font-size: 20px;
+        max-width: 300px; } }
+    @media only screen and (max-width: 500px) {
+      main .phrase {
+        font-size: 12px;
+        max-width: 150px; } }
+  main .blockPhraseDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 40px; }
+    @media only screen and (max-width: 1000px) {
+      main .blockPhraseDown {
+        margin-top: 10px; } }
+    @media only screen and (max-width: 730px) {
+      main .blockPhraseDown {
+        margin-top: 25px; } }
+  main ._01 {
+    font-size: 161px;
+    font-weight: 700;
+    color: #2A2A2A; }
+    @media only screen and (max-width: 1775px) {
+      main ._01 {
+        font-size: 85px; } }
+    @media only screen and (max-width: 1190px) {
+      main ._01 {
+        font-size: 60px; } }
+    @media only screen and (max-width: 500px) {
+      main ._01 {
+        font-size: 90px; } }
+    @media only screen and (max-width: 730px) {
+      main ._01 {
+        font-size: 60px; } }
+  main .blackRectangle {
+    width: 100%;
+    max-width: 430px;
+    background-color: #2A2A2A;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 50px 30px;
+    border: 2px solid #707070; }
+    @media only screen and (max-width: 1775px) {
+      main .blackRectangle {
+        max-width: 245px;
+        padding: 30px; } }
+    @media only screen and (max-width: 1190px) {
+      main .blackRectangle {
+        max-width: 180px;
+        padding: 20px 30px; } }
+    @media only screen and (max-width: 1000px) {
+      main .blackRectangle {
+        max-width: 130px;
+        padding: 20px;
+        border-radius: 20px; } }
+    @media only screen and (max-width: 730px) {
+      main .blackRectangle {
+        max-width: 345px;
+        padding: 30px;
+        border-radius: 30px; } }
+    @media only screen and (max-width: 525px) {
+      main .blackRectangle {
+        max-width: 150px;
+        padding: 15px;
+        border-radius: 20px; } }
+    main .blackRectangle span {
+      height: 85px;
+      width: 85px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-block; }
+      @media only screen and (max-width: 1775px) {
+        main .blackRectangle span {
+          height: 28px;
+          width: 28px; } }
+      @media only screen and (max-width: 1000px) {
+        main .blackRectangle span {
+          height: 20px;
+          width: 20px; } }
+      @media only screen and (max-width: 730px) {
+        main .blackRectangle span {
+          height: 50px;
+          width: 50px; } }
+      @media only screen and (max-width: 500px) {
+        main .blackRectangle span {
+          height: 30px;
+          width: 30px; } }
+    main .blackRectangle span:nth-child(2) {
+      margin: 0 50px; }
+      @media only screen and (max-width: 1775px) {
+        main .blackRectangle span:nth-child(2) {
+          margin: 0 10px; } }
+      @media only screen and (max-width: 730px) {
+        main .blackRectangle span:nth-child(2) {
+          margin: 0 30px; } }
+      @media only screen and (max-width: 500px) {
+        main .blackRectangle span:nth-child(2) {
+          margin: 0 15px; } }
